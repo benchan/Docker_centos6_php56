@@ -1,0 +1,7 @@
+web:
+  image: eghorie/centos6_php56
+  ports:
+    - "80:80"
+  volumes:
+    - "./data:/var/www/html/"
+  command: sh /tmp/init.sh
